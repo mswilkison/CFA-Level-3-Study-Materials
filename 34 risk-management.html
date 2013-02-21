@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 14 | Reading 34 | Risk Management</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 34</h1>
+					<h3>Risk Management</h3>
+					<p>
+						<small>Created by <a href="http://alchemistsacademy.com">MacLane Wilkison</a> / <a href="https://twitter.com/MacLaneWilkison">@MacLaneWilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Introduction</h2>
+					<em>
+						<p>Definition: A process involving the:</p>
+						<ol>
+							<li>Identification of exposures to risk</li>
+							<li>Establishment of appropriate ranges for exposures</li>
+							<li>Continuous measuresment of these exposures</li>
+							<li>Appropriate adjustment of exposure levels in response to breaches of target ranges</li>
+						</ol>
+					</em>
+				</section>
+
+				<section>
+					<h2>Risk Governance</h2>
+					<ul>
+						<li>Centralized vs. decentralized</li>
+						<ol>
+							<li>Identify risk factor exposures</li>
+							<li>Quantify size of exposures</li>
+							<li>Map risk factor inputs into a risk estimation calculation</li>
+							<li>Identify overall risk factor exposures and contributions to overall risk</li>
+							<li>Establish reporting process</li>
+							<li>Monitor compliance</li>
+						</ol>
+					</ul>
+					<aside class="notes">
+						Risk management is ultimately responsible for setting corporate policies and standards relating to risk. Enterprise risk management (ERM), allows a more cohesive view of the risk of the firm on the whole and the interplay of risk between business units. In comparison, a decentralized system develops risk assessments from the ground up throught the business units which theoretically should have a better view of the risk of their respective businesses. It's important to maintain strict divisions and independence between back office function (transaction processing, record keeping, etc.) and the front office.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Step 1: Identify Risks</h2>
+					<ul>
+					<img src="images/risk-management/financial-nonfinancial-risks.png" alt="financial vs. nonfinancial risks">
+					<aside class="notes">
+						Financial risks are all risks derived from events in external financial markets. Nonfinancial risks refers to all other forms of risks.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Financial Risks</h2>
+					<ul>
+						<li>Market risk</li>
+						<li>Credit risk</li>
+						<li>Liquidity risk</li>
+					</ul>
+					<aside class="notes">
+						Market risk is composed of factors such as interest rates, exchange rates, and stock and commodity prices. Credit risk refers to losses cause by a counterparty's failure to make a promised payment. Liquidity risk is the market's inability to trade an asset efficiently.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Nonfinancial Risks</h2>
+					<ul>
+						<li>Operational risk</li>
+						<li>Model risk</li>
+						<li>Settlement risk</li>
+						<li>Regulatory risk</li>
+						<li>Legal/contract risk</li>
+						<li>Tax risk</li>
+						<li>Accounting risk</li>
+						<li>Sovereign risk</li>
+						<li>Political risk</li>
+						<li>Other risks</li>
+					</ul>
+					<aside class="notes">
+						Operating risk - failures in a company's systems and procedures or from external events (i.e. computer bugs, human error, terrorist/natural disasters). Model risk - incorrect selection or misapplication of a model (i.e. inappropriate model, misinterpretation of results, incorrect inputs). Settlement risk - possibility that one party is in the process of paying their counterparty while that counterparty is declaring bankruptcy (this is often categorized under credit risk). Regulatory risk - uncertainty of how a transaction will be treated by regulators (the failed T-Mobile/AT&T transaction is a recent example). Legal/contract risk - losses arising from the legal system's failure to enforace a contract. Tax risk - uncertainty associated with tax laws. Accounting risk - uncertainty about how a transaction should be recorded and the potential for accounting rules to change. Sovereign risk - a form of credit risk in which the borrower is a government. Political risk - changes in the political environment. Other risks - ESG (Environmental, social, governance factors), performance netting, settlement netting.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Step 2: Measuring Risk</h2>
+					<ul>
+						<li>Market risk</li>
+						<ul>
+							<li>Volatility (active risk/tracking risk)</li>
+							<li>Beta/duration/delta</li>
+							<li>Convexity/gamma</li>
+							<li>Vega/theta</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						Beta, duration, and delta are first-order risks. Convexity, gamma, vega, and theta are second-order risks. Beta measures sensitivity to market movements and is a linear risk measure. Duration measures the sensitivity of a bond to a small parallel shift in the yield curve. Delta measures an option's sensitivity to a small change in the value of its underlying. Convexity measures how interest rate sensitivity changes with changes in interest rates. Gamma measures the delta's sensitivity to a change in the underlying's value. Vega is the change in the price of an option for a change in the underlying's volatility. Theta is the change in the price of an option associated with a one-day reduction in its time to expiration.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Value at Risk (VaR)</h2>
+					<p><em>Definition: An estimate of the loss (in $ terms) that is expected to be exceeded with a given level of probability over a specified time period</em></p>
+					<ul>
+						<li>Measure of <u>minimum</u> loss</li>
+						<li>"There is a 5% chance the portfolio losses will be at least $3.5MM in a single week."</li>
+					</ul>
+					<aside class="notes">
+						A risk analyst must specify probability level, time period, and specific approach used to model loss distribution.
+					</aside>
+				</section>
+
+				<section>
+					<h2>VaR Estimation Methodologies</h2>
+					<ul>
+						<li>Analytical/variance-covariance method</li>
+						<ul>
+							<li>Assumes normal distribution of portfolio returns</li>
+							<li>[example]</li>
+						</ul>
+						<li>Historical simulation method</li>
+						<ul>
+							<li>[example]</li>
+						</ul>
+						<li>Monte Carlo simulation method</li>
+					</ul>
+					<aside class="notes">
+						The variance-covariance method assumes a normal distribution of portfolio returns. The Monte Carlo simulation method generates random outcomes according to an assumes probability distribution and a set of input parameters.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Comparison of Methodologies</h2>
+					<img src="images/risk-management/comparison-of-methodologies.png" alt="comparison of methodologies">
+					<aside class="notes">
+						Nonparametric: involves minimal probability-distribution assumptions)
+					</aside>
+				</section>
+
+				<section>
+					<h2>Advantages/Limitations</h2>
+					<ul>
+						<li>Advantages</li>
+						<ul>
+							<li>Simple/intuitive</li>
+							<li>Accepted by regulatory bodies</li>
+							<li>Versatile</li>
+						</ul>
+						<li>Limitations</li>
+						<ul>
+							<li>Difficult to estimate</li>
+							<li>Different methodologies yield different results</li>
+							<li>False sense of security</li>
+							<li>Underestimates magnitude and frequency of worst returns</li>
+							<li>Not subadditive</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>VaR Extensions/Supplements</h2>
+					<ul>
+						<li>Incremental value at risk (IVaR)</li>
+						<li>Cash flow at risk (CFaR)</li>
+						<li>Tail value at risk (TVaR)</li>
+					</ul>
+					<aside class="notes">
+						IVaR measures the incremental effect of an asset on portfolio VaR.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Stress Testing</h2>
+					<ul>
+						<li>Identifies unusual circumstances that couuld lead to excess losses</li>
+						<li>Natural complement to VaR</li>
+						<li>Scenario analysis</li>
+						<ul>
+							<li>Process of evaluating a portfolio under different states of the world</li>
+							<li>Key variable changes, stylized scenarios, historical and hypothetical extreme events</li>
+						</ul>
+						<li>Stress tests</li>
+						<ul>
+							<li>Factor push, maximum loss optimization, worst-case scenario analysis</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						Stylized scenarios include parallel yield curve shifts/twists/changes in spread/exchange rate movements. Historical simulations may reproduce extreme environments such as those during the LTCM collapse, Russian default, and the housing bubble collapse. Factor push - push price/risk factors in maximally disadvantageous way. Maximum loss optimization - determine the risk variable that will produce maximum possible loss. Worst-case scenario - examine the worst-case scenario that can reasonably be expected to occur.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Measuring Credit Risk</h2>
+					<ul>
+						<li>Two-dimensional</li>
+						<ul>
+							<li>Default-rate (likelihood of loss)</li>
+							<li>Recovery rate (magnitude of loss)</li>
+						</ul>
+						<li>Current vs. potential credit risk</li>
+						<li>Cross-default provision</li>
+						<li>Credit VaR</li>
+					</ul>
+					<aside class="notes">
+						Present credit risk is the risk that current payments will not be made. Potential credit risk is the risk that future default will occur. Cross-default provisions are contractual stipulations that a default on any outstanding obligation triggers a default on the specified obligation.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Option-Pricing Theory</h2>
+					<p>X/(1+<em>r</em>)<sup>T</sup> = p<sub>0</sub>+S<sub>0</sub>-c<sub>0</sub></p>
+					<p>[payoff table]</p>
+					<aside class="notes">
+						A bond with credit risk is equivalent to a default-free bond plus an implicit short put option written by bondholders for stockholders.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Credit Risk and Derivatives</h2>
+					<p>[put all in table]</p>
+					<ul>
+						<li>Forwards bilateral</li>
+						<li>Swaps bilateral</li>
+						<li>Options bilateral</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Step 3: Managing Risk (Market Risk)</h2>
+					<p>Set risk tolerance levels and adjust behavior to be consistent with such levels</p>
+					<ul>
+						<li>Risk budgeting</li>
+						<ul>
+							<li>Total risk = sum of risk budgets - diversification effect</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						Risk budgeting refers to the efficient allocation of risk across businesss units or investment opportunities.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Managing Credit Risk</h2>
+					<ul>
+						<li>Counterparty exposure limits</li>
+						<li>Marking to market</li>
+						<li>Collateral posting provisions</li>
+						<li>Payment netting</li>
+						<ul>
+							<li>Closeout netting</li>
+						</ul>
+						<li>Minimum credit standards</li>
+						<li>Credit derivatives</li>
+					</ul>
+					<aside class="notes">
+						Marking to market is repricing of an OTC derivative at given time intervals. Collateral posting provisions require the posting of highly-liquid, low-risk securities, often cash. Payment netting - if A owes B $100 and B owes A $40, then A will simply pay B $60. Closeout netting refers to the act of netting the market value of all the derivative contracts two parties have entered into with eachother and is often used when one party files for bankruptcy. Investors may require minimum credit standards (based on credit rating agencies or internal analysis). Enhanced derivatives products companies (EDPCs) are speical purpose vehicles with high credit ratings that are separate subsidiaries used to hedge a dealer's derivative position. Credit derivatives may be used to transfer credit risk to another party (e.g. credit default swaps, total return swaps, credit spread options and credit spread forwards).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Performance Evaluation</h2>
+					<p>[table see info in powerpoint]</p>
+				</section>
+
+				<section>
+					<h2>Capital Allocation</h2>
+					<p>[table see pp]</p>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

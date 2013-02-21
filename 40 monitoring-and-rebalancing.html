@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 16 | Reading 40 | Portfolio Monitoring and Rebalancing</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 40</h1>
+					<h3>Portfolio Monitoring and Rebalancing</h3>
+					<p>
+						<small>Created by <a href="http://alchemistsacademy.com">MacLane Wilkison</a> / <a href="https://twitter.com/MacLaneWilkison">@MacLaneWilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Monitoring</h2>
+					<ul>
+						<li>Investor circumstances</li>
+						<ul>
+							<li>Investment policy statement</li>
+							<li>Strategic asset allocation</li>
+							<li>Individual portfolio holdings</li>
+						</ul>
+						<li>Market and economic changes</li>
+						<ul>
+							<li>Strategic asset allocation</li>
+							<li>Tactical asset allocation</li>
+							<li>Style/sector exposure changes</li>
+							<li>Individual portfolio holdings</li>
+						</ul>
+						<li>Portfolio</li>
+						<ul>
+							<li>Holdings</li>
+							<li>Strategic asset allocation</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Investor Circumstances and Constraints</h2>
+					<ul>
+						<li>Investor circumstances/wealth</li>
+						<li>Liquidity requirements</li>
+						<li>Time horizons</li>
+						<li>Tax circumstances</li>
+						<li>Laws and regulations</li>
+						<li>Unique circumstances</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Market and Economic Changes</h2>
+					<ul>
+						<li>Asset risk attributes</li>
+						<li>Market cycles</li>
+						<li>Central bank policy</li>
+						<li>Yield curve and inflation</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Portfolio</h2>
+					<ul>
+						<li>Events and trends affect the prospects of individual holdings and asset classes</li>
+						<li>Changes in asset values that create unintended divergences from strategic asset allocation</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Portfolio Rebalancing</h2>
+					<ul>
+						<li>Benefits</li>
+						<li>Costs</li>
+						<ul>
+							<li>Transaction costs</li>
+							<li>Tax costs</li>
+						</ul>
+						<li>Disciplines</li>
+						<ul>
+							<li>Calendar rebalancing</li>
+							<li>Percentage-of-portfolio rebalancing [factors table]</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>[Perold-Sharpe Analysis]</h2>
+					<ul>
+						<li>Buy-and-hold (X% equity, (1-X)% fixed income)</li>
+						<ul>
+							<li>Unlimited upside, capped downside</li>
+							<li>Portfolio value/return a linear function of value of stocks/return on stocks</li>
+							<li>Value of stocks reflects the cushion 1:1</li>
+							<li>Implies investor's positively related to wealth and stock returns; risk tolerance is zero if stock value falls to zero</li>
+						</ul>
+						<li>Constant-mix strategies</li>
+						<li>Constant-proportion strategy (CPPI)</li>
+						<li>Linear, concave, and convex strategies</li>
+						<li>[replace above with a table]</li>
+					</ul>
+					<aside class="notes">
+						The Perold-Sharpre analysis assumes a simple 2-asset class portfolio in which just one asset class is risky.
+					</aside>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
