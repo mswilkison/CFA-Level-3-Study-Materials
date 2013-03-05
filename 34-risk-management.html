@@ -149,17 +149,14 @@
 					<ul>
 						<li>Analytical/variance-covariance method</li>
 						<ul>
-							<li>Assumes normal distribution of portfolio returns</li>
-							<li>[example]</li>
+							<li>5% yearly VaR: (μ - 1.65σ) × Market Value</li>
+							<li>1% weekly VaR: (μ/52 - 2.33(σ/√52) × Market Value</li>
 						</ul>
 						<li>Historical simulation method</li>
-						<ul>
-							<li>[example]</li>
-						</ul>
 						<li>Monte Carlo simulation method</li>
 					</ul>
 					<aside class="notes">
-						The variance-covariance method assumes a normal distribution of portfolio returns. The Monte Carlo simulation method generates random outcomes according to an assumes probability distribution and a set of input parameters.
+						The variance-covariance method assumes a normal distribution of portfolio returns. Under the historical method, simply order the historical returns, find the appropriate historical return and multiply it by the market value being examined. The Monte Carlo simulation method generates random outcomes according to an assumes probability distribution and a set of input parameters.
 					</aside>
 				</section>
 
@@ -243,20 +240,15 @@
 				<section>
 					<h2>Option-Pricing Theory</h2>
 					<p>X/(1+<em>r</em>)<sup>T</sup> = p<sub>0</sub>+S<sub>0</sub>-c<sub>0</sub></p>
-					<p>[payoff table]</p>
+					<img src="images/risk-management/options-pricing-theory-payoff-table.png" alt="payoffs to the suppliers of capital to the company">
 					<aside class="notes">
-						A bond with credit risk is equivalent to a default-free bond plus an implicit short put option written by bondholders for stockholders.
+						A bond with credit risk is equivalent to a default-free bond plus an implicit short put option written by bondholders for stockholders. The table above shows the payoffs to suppliers of capital when the company's assets are worth less than its debt (A<sub>T</sub><F) and when it's assets are worth more than its debt (A<sub>T</sub>≥F)
 					</aside>
 				</section>
 
 				<section>
 					<h2>Credit Risk and Derivatives</h2>
-					<p>[put all in table]</p>
-					<ul>
-						<li>Forwards bilateral</li>
-						<li>Swaps bilateral</li>
-						<li>Options bilateral</li>
-					</ul>
+					<img src="images/risk-management/credit-risk-and-derivatives.png" alt="credit risk under forwards, swaps, and options">
 				</section>
 
 				<section>
@@ -293,17 +285,26 @@
 
 				<section>
 					<h2>Performance Evaluation</h2>
-					<p>[table see info in powerpoint]</p>
+					<img src="images/risk-management/performance-evaluation-methodologies.png" alt="performance evaluation methodologies">
 				</section>
 
 				<section>
 					<h2>Capital Allocation</h2>
-					<p>[table see pp]</p>
+					<ul>
+						<li>Nominal, notional, or monetary position limits</li>
+						<li>VaR-based position limits</li>
+						<li>Maximum loss limits</li>
+						<li>Internal capital requirements</li>
+						<li>Regulatory capital requirements</li>
+					</ul>
+					<aside class="notes">
+						There are various ways to allocate capital across business units.
+					</aside>
 				</section>
 
 				<section>
 					<h1>THE END</h1>
-					<h3><a href="alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
 				</section>
 
 			</div>

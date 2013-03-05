@@ -41,7 +41,7 @@
 					<h1>Reading 31</h1>
 					<h3>Alternative Investments</h3>
 					<p>
-						<small>Created by <a href="http://alchemistsacademy.com">MacLane Wilkison</a> / <a href="https://twitter.com/MacLaneWilkison">@MacLaneWilkison</a></small>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLaneWilkison</a></small>
 					</p>
 				</section>
 
@@ -55,10 +55,6 @@
 						<li>Managed Futures</li>
 						<li>Distressed Securities</li>
 					</ol>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -181,12 +177,10 @@
 						</aside>
 					</section>
 					<section>
-						<h2>REIT Investment Characteristics</h2>
-					</section>
-					<section>
 						<h2>Indices</h2>
-						<p>[Smoothed vs. unsmoothed] direct</p>
-						<p>[Indirect; corrected vs. uncorrected equity component]</p>
+						<p>Smoothed vs. unsmoothed</p>
+						<aside class="notes">
+							Property appraisals are used to determine asset values in the NCREIF index. Because of the infrequent nature of these appraisals, prices appear to exhibit considerably lower volatility than in reality. To correct for this bias several methods are used to construct "unsmoothed" indices that provide a more accurate picture of volatility.
 					</section>
 				</section>
 
@@ -308,10 +302,10 @@
 							<li>Survivorship bias</li>
 							<li>Stale price bias</li>
 							<li>Backfill bias/inclusion bias</li>
-							<li>[Value-weighting of indices]</li>
+							<li>Value-weighted indices</li>
 						</ul>
 						<aside class="notes">
-							Self-selection bias is a problem because hedge fund managers are able to choose whether or not to report to a given index. Survivorship bias occurs when managers wiht poor track records close their business and are dropped from the database while high-performers remain which results in a positively biased average return that isn't reflective of actual results. Stal price bias can occur in markets with low liquidity or low trading volume, resulting in measured correlations and volatity being out of line with expectations. Backfill bias is similar to self-selection bias. It occurs when a hedge fund joins an index and is given the option of reporting its past return data for inclusion in the database. Presumably, only managers with high historical returns would choose to do so.
+							Self-selection bias is a problem because hedge fund managers are able to choose whether or not to report to a given index. Survivorship bias occurs when managers wiht poor track records close their business and are dropped from the database while high-performers remain which results in a positively biased average return that isn't reflective of actual results. Stal price bias can occur in markets with low liquidity or low trading volume, resulting in measured correlations and volatity being out of line with expectations. Backfill bias is similar to self-selection bias. It occurs when a hedge fund joins an index and is given the option of reporting its past return data for inclusion in the database. Presumably, only managers with high historical returns would choose to do so. Value-weighted indices can mimic the return characteristics of their best-performing constituents over time, as those high-performers' assets appreciate and take up a larger portion of the index.
 						</aside>
 					</section>
 					<section>
@@ -328,7 +322,7 @@
 						<h2>Other Considerations</h2>
 						<ul>
 							<li>Incentive fees and lock-up impacts</li>
-							<li>[Fund of funds]</li>
+							<li>Fund of funds</li>
 							<li>Fund size</li>
 							<li>Vintage effects</li>
 							<li>Due diligence</li>
@@ -340,9 +334,9 @@
 					<section>
 						<h2>Performance Evaluation</h2>
 						<ul>
-							<li>Downside deviation [formula]</li>
+							<li>Downside deviation formula</li>
 							<li>Maximum drawdown</li>
-							<li>Sharpe ratio [formula]</li>
+							<li>Sharpe ratio formula</li>
 							<ul>
 								<li>Time dependent</li>
 								<li>Not appropriate for asymettrical return distributions</li>
@@ -369,10 +363,20 @@
 					</section>
 					<section>
 						<h2>Sharpe Ratio Manipulation</h2>
+						<ol>
+							<li>Lengthening the measurement interval</li>
+							<li>Compounding monthly returns but no the standard deviation</li>
+							<li>Writing out-of-the-money puts and calls</li>
+							<li>Smoothing returns</li>
+							<li>Removing extreme returns</li>
+						</ol>
+						<aside class="notes">
+							1) Volatility is generally lower over a longer period of time. 3) Increases return via premiums but exposes portfolio to negative skew 4) Illiquid assets and certain derivatives may need to be valued using highly-subject/input sensitive models. These models are open to manipulation/bias. 5) For example, a portfolio manager may enter a total-return swap to pay a fixed cash flow in exchange for receiving the best and worst return over a given time period.
+						</aside>	
 					</section>
-					<section>
+					<!--<section>
 						<h2>Illustrative Sortino Ratio Calculation</h2>
-					</section>
+					</section>-->
 				</section>
 
 				<section>
@@ -413,7 +417,7 @@
 						<h2>Investment Characteristics</h2>
 						<ul>
 							<li>Zero sum</li>
-							<li>Returns independent of overall market movements [explain 2 sources of return (risk premium and differential carrying costs)]</li>
+							<li>Returns independent of overall market movements<!--[explain 2 sources of return (risk premium and differential carrying costs)]--></li>
 							<li>Evidence of performance persistence</li>
 							<li>Relative riskiness/beta is a good predictor of future performance</li>
 						</ul>
@@ -453,7 +457,7 @@
 							</ul>
 						</ul>
 						<aside class="notes">
-							Structure []. Orphan equity is newly issued equity of a company emerging form reorganization. Derivatives are primarily used for heding purposes
+							Hedge fund structures offer the ability to accept new capital on a continuous basis and tends to be more lucrative from the manager's standpoint. Private equity structures have a fixed term and do not accept new capital once the offering period expires. Orphan equity is newly issued equity of a company emerging form reorganization. Derivatives are primarily used for heding purposes
 						</aside>
 					</section>
 					<section>
@@ -484,7 +488,6 @@
 						<h2>Other Consideration</h2>
 						<ul>
 							<li>Non-normal return distribution</li>
-							<li>[Bankruptcy process summary]</li>
 						</ul>
 						<aside class="notes">
 							Because of the negative skewness and positive kurtosis of distressed investing a normal return distribution is not appropriate, thus rendering the Sharpe ratio inaccurate as a measure of true risk
@@ -492,12 +495,24 @@
 					</section>
 					<section>
 						<h2>Bankruptcy Process</h2>
+						<ul>
+							<li>Chapter 7 vs. Chapter 11</li>
+							<li>Debtor-in-possesion</li>
+							<li>Voluntary vs. involuntary</li>
+							<li>Pre-packaged filing</li>
+							<li>Exclusivity period</li>
+							<li>Cram-down</li>
+							<li>Absolute priority rule</li>
+						</ul>
+						<aside class="notes">
+							Under Chapter 7, a firm's assets are collected and liquidated and it ceases to exist. Under Chapter 11, the debtor is provided an opportunity to reorganize/restructure and continue as a going-concern. When under Chapter 11 protection, a firm is referred to as a debtor-in-possession, during which time it will seek to pay off creditors according to a plan approved by the court without the threat of having its assets seized by creditors. A bankruptcy proceeding can be initiated by the firm itself (voluntary) or by involuntarily by its creditors. In the case of voluntary filings, the company will often work with creditors in advance to establish an agreed-upon reorganization plan to minimize costs and time spent in bankruptcy. Upon filing for Chapter 11, the company enters an exclusivity period during which it has the sole ability to submit a plan. Once this period expires, any party with an interest in the bankruptcy can file an alternative plan. Creditors and equity-holders must then agree to the plan. If they are unable to do so, the judge may, in some cases, overrule any dissenters (the "impaired class") and "cram-down" the plan. The absolute priority rule states that any reorganization plan must respect the rule of priority with regard to the order of claims by security holders (senior secured before bonds before shareholders, etc.).
+						</aside>
 					</section>
 				</section>
 
 				<section>
 					<h1>THE END</h1>
-					<h3><a href="alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
 				</section>
 
 			</div>

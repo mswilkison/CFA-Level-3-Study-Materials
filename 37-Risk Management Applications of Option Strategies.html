@@ -161,20 +161,31 @@
 					<h2>Interest Rate Call</h2>
 					<ul>
 						<li>Notional principal × max(0, Underlying rate at expiration - Exercise rate) × (Days in underlying rate / 360)</li>
-						<li>[caps]</li>
+						<li>Interest rate caps</li>
 					</ul>
+					<aside class="notes">
+						A cap is a combination of interest rate call options structured to "cap" the interest rate on a loan. The individual constituent options are referred to as caplets.
+					</aside>
 				</section>
 
 				<section>
 					<h2>Interest Rate Put</h2>
 					<ul>
 						<li>Notional principal × max(0, Exercise rate - Underlying rate at expiration) × (Days in underlying rate / 360)</li>
-						<li>[Floors]</li>
+						<li>Interest rate floors</li>
 					</ul>
+					<aside class="notes">
+						A floor is a combination of interest rate put options structured to provide a "floor" on the interest rate on a loan. The individual constituent options are referred to as floorlets.
+					</aside>
 				</section>
 
 				<section>
-					<h2>[Interest Rate Collar]</h2>
+					<h2>Interest Rate Collar</h2>
+					<ul>
+						<li>Long position in cap combined with short position in floor</li>
+						<li>Proceeds from sale of the floor offset cost of the call</li>
+						<li>Establishes a range in which the effective interest rate on the loan can vary</li>
+					</ul>
 				</section>
 
 				<section>
@@ -184,14 +195,11 @@
 						<ul>
 							<li>Delta ≈ Change in option price / Change in underlying price</li>
 							<li>N<sub>c</sub>/N<sub>s</sub>=-1/(Δc/ΔS)</li>
-							<li>[price example]</li>
-							<li>[time example]</li>
-							<li>[step through example]</li>
-							<li>[hedge w/ more options example]</li>
+							<li>Estimated option price = Original option price + (New underlying price - Original underlying price) × Delta</li>
 						</ul>
 					</ul>
 					<aside class="notes">
-						Delta is merely an approximation of the change in the call price for a change in the underlying. Delta changes if anything else changes(i.e. the price of the underlying or time). The number of units of the underlying must be rounded off, leading to a small amount of imprecision in the delta hedge. Be careful, delta is not an accurate estimation for large changes in price.
+						Delta is merely an approximation of the change in the call price for a change in the underlying. Delta changes if anything else changes(i.e. the price of the underlying or time). The number of units of the underlying must be rounded off, leading to a small amount of imprecision in the delta hedge. Be careful, delta is not an accurate estimation for large changes in price. 'N<sub>s</sub>' is the number of units of the underlying. 'N<sub>c</sub>' is the number of call options. The ratio of calls to shares equals -1/delta. We use the Black-Scholes-Merton model to determine the price of the option.
 					</aside>
 				</section>
 
@@ -208,7 +216,7 @@
 
 				<section>
 					<h1>THE END</h1>
-					<h3><a href="alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
 				</section>
 
 			</div>
