@@ -41,7 +41,7 @@
 					<h1>Reading 38</h1>
 					<h3>Risk Management Applications of Swap Strategies</h3>
 					<p>
-						<small>Created by <a href="http://alchemistsacademy.com">MacLane Wilkison</a> / <a href="https://twitter.com/MacLaneWilkison">@MacLaneWilkison</a></small>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLaneWilkison</a></small>
 					</p>
 				</section>
 
@@ -52,61 +52,104 @@
 
 				<section>
 					<h2>Converting Floating and Fixed Rates</h2>
-					<p>[diagram]</p>
-					<p>Retains exposure to floating-rate via duration</p>
+					<img src="images/38/interest-rate-swap-diagram.png" alt="interest rate swap illustration" />
+					<p>Net effect: BorrowCo pay 7% + 4% = 11% fixed</p>
 					<aside class="notes">
-						Conversion hedges cash flows but exposes the company to fluctuations in market value.
+						In the above example, BorrowCo borrows $30MM from LendoCo at a floating rate of L+400bps. It enters into a swap agreement with SwapCo to receive LIBOR and pay 7%. The net effect of this transaction is that BorrowCo will pay an 11% fixed rate. This conversion hedges cash flows but exposes the company to fluctuations in market value as the company retains exposure to the floating-rate via duration.
 					</aside>
 				</section>
 
 				<section>
 					<h2>Adjusting Duration with Swaps</h2>
-					<p>[example]</p>
 					<ul>
 						<li>Negative duration (pay fixed to receive floating)</li>
 						<li>Terms (maturity/payment frequency)</li>
 						<li>Notional principal: NP = B[(MDUR<sub>T</sub>-MDUR<sub>B</sub>)/MDUR<sub>S</sub>]</li>
 					</ul>
+					<p>For example, to adjust the duration of a $100MM portfolio from 6.00 to 3.75 using a swap with MDUR of -.50, the NP will be: $100MM(3.75-6.00)/-.50 = $450MM</p>
+					<aside class="notes">
+						To reduce the duration, enter a pay-fixed, receive-floating swap. To increase the duration, enter a pay-floating, receive-fixed swap. Ideally, the swap will have a maturity at least as long as the period during wich the duration adjustment applies, or else another swap will need to be entered as the current one expires.
+					</aside>
 				</section>
 
 				<section>
 					<h2>Structured Notes</h2>
-					<p>[leveraged floater]</p>
-					<p>[inverse floater] caps</p>
+					<p>Leveraged floater</p>
+					<img src="images/38/leveraged-floater.png" alt="leveraged floater illustration" />
+					<p>Net effect: ArbitrageCo earns 1.5(ci-FS)(FP) fixed</p>
+					<aside class="notes">
+						In the above example, ArbitrageCo issues a leveraged floater to InsuranceCo paying 1.5LIBOR on notional principal FP. ArbirtageCo uses the proceeds from the floater to purchase a fixed-rate bond from BorrowCo paying ci with face value of 1.5(FP). ArbitrageCo then enters a swap with SwapCo to pay 1.5L and receive a fixed payment of 1.5(FS). Then net effect of this transaction is that ArbitrageCo receives 1.5(ci-FS)(FP) fixed.
+					</aside>
 				</section>
 
 				<section>
-					<h2>[Converting a Loan into Another Currency]</h2>
+					<h2>Structured Notes (cont'd)</h2>
+					<p>Inverse floater</p>
+					<img src="images/38/inverse-floater.png" alt="inverse floater illustration" />
+					<p>Net effect: ArbitrageCo earns FP(FS+ci-b) fixed</p>
+					<aside class="notes">
+						In this example, ArbitrageCo issues an inverse floater paying b-L on notional principal FP. ArbitrageCo then uses the proceeds from the floater to purchase a fixed-rate bond from BorrowCo paying ci. ArbitrageCo then enters a swap with SwapCo to pay L and receive FS. The net effect of this transaction is that ArbitrageCo receives FP(FS+ci-b) fixed.
+					</aside>
 				</section>
 
 				<section>
-					<h2>[Converting Cash Receipts into Domestic Currency]</h2>
+					<h2>Converting a Loan to Another Currency</h2>
+					<img src="images/38/currency-loan-swap.png" alt="converting a loan in one currency into a loan in another currency illustration" />
+					<aside class="notes">
+						In this example, BorrowCo wants to finance a European expansion plan. They can borrow in the European markets, but they are not a very seasoned lender in those markets. Alternatively, they can issue a dollar-denominated bond and convert it into Euros using a currency swap. They exchange principal amounts at the outset of the swap and pay interest in dollars and receive interest in Euros throughout the life of the swap. At maturity, they exchange the original principal amounts and repay the dollar-denominated bond.
 				</section>
 
 				<section>
-					<h2>[Managing Dual-Currency Bonds]</h2>
+					<h2>Converting Cash Receipts into Domestic Currency</h2>
+					<p>Current spot exchange rate of ¥120/$</p>
+					<img src="images/38/foreign-cash-receipts-swap.png" alt="converting foreign cash receipts into domestic currency illustration" />
+					<p>Net effect: BorrowCo converts its quarterly ¥500MM into ~$5.83MM at a fixed rate</p>
+					<aside class="notes">
+						In this example, BorrowCo has a Japanese subsidiary that generates ¥500MM per quarter. It wants to convert this inflow into USD and enters a swap agreeement at the current exchange rate of ¥120/$. Assuming a fixed rate on swaps OF 5% in Japan and 7% in the US. To create a swap based on the exchange of ¥500MM per quarter requires a notional principal of ¥500MM/(.05/4)=¥40Bn=$333MM. Thus, BorrowCo will pay ¥500MM and receive $333MM(.07/4)=$5.83MM per quarter.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Managing Dual-Currency Bonds</h2>
 					<aside clas="notes">
 						Dual-currency bonds are bonds on which the interest is paid in one currency and the principal is paid in another. This can be replicated by issuing a standard bond in one currency and entering a currency swap to pay interest in another.
 					</aside>
 				</section>
 
 				<section>
-					<h2>[Diversifying a Concentrated Portfolio</h2>
+					<h2>Diversifying a Concentrated Portfolio</h2>
+					<img src="images/38/diversifying-concentrated-portfolio.png" alt="diversifying a concentrated portfolio illustration" />
+					<p>Net effect: InvestCo pays the return on XYZ stock and receives the return on the specified index</p>
 					<aside class="notes">
-						This strategy can create a potential cash flow problem if the investor loses on both sides of the trade.
+						In this example, InvestCo wants to diversify its holdings away from XYZ stock but doesn't want to divest its holdings. It can enter into an equity swap with SwapCo in which it pays the return on XYZ and receives the return on a specifed index. This strategy can create a potential cash flow problem if the investor loses on both sides of the trade.
 					</aside>
 				</section>
 
 				<section>
-					<h2>[Achieving International Diversification]</h2>
+					<h2>Achieving International Diversification</h2>
+					<img src="images/38/achieving-international-diversification.png" alt="achieving international diversification illustration" />
+					<p>Net effect: InvestCo earns the return on the domestic stock and enters a swap paying that domestic return and receiving the return on an international index</p>
+					<aside class="notes">
+						In this example InvestCo wants to diversify its holdings internationally without transacting in stock directly. It can enter an equit swap to pay the domestic return and receive the return on an international index.
+					</aside>
 				</section>
 
 				<section>
-					<h2>[Changing Asset Allocation]</h2>
+					<h2>Changing Asset Allocation</h2>
+					<img src="images/38/changing-asset-allocation.png" alt="changing an asset allocation illustration" />
+					<p>Net effect: InvestCo changes its asset allocation to weight equities more heavily</p>
+					<aside class="notes">
+						In this example, InvestCo wants to change its asset allocation by increasing its exposure to equities and reducing its exposure to fixed-income assets. It does this by entering a set of swaps in which it pays the return on Treasury and corporate bonds and receives the return on large- and small-cap equities.
+					</aside>
 				</section>
 
 				<section>
-					<h2>[Reducing Insider Exposure]</h2>
+					<h2>Reducing Insider Exposure</h2>
+					<img src="images/38/reducing-insider-exposure.png" alt="reducing insider exposure illustration" />
+					<p>Net effect: The insider effectively sells his exposure and receives a return of an equivalent amount in equity and/or bonds</p>
+					<aside class="notes">
+						In this example, the insider wants to reduce his exposure to a particular stock without divesting it and/or giving up control. She can enter a swap to pay the return on the specific stock and receive the return on an equity and/or bond index.
+					</aside>
 				</section>
 
 				<section>
@@ -114,19 +157,16 @@
 					<ul>
 						<li>Payer vs. receiver swaptions</li>
 						<li>American vs. European swaptions</li>
+						<li>Strategies/applications:</li>
+						<ul>
+							<li>Anticipating future borrowing</li>
+							<li>Terminating a swap</li>
+							<li>Synthetically removing (adding) a call feature in callable (noncallable) debt</li>
+						</ul>
 					</ul>
-				</section>
-
-				<section>
-					<h2>[Anticipating Future Borrowing]</h2>
-				</section>
-
-				<section>
-					<h2>Using a Swaption to Terminate a Swap</h2>
-				</section>
-
-				<section>
-					<h2>[Synthetically Adding/Removing Options to Debt]</h2>
+					<aside class="notes">
+						A payer swaption gives the holder the option to enter into a swap as the fixed-rate payer, floating-rate receiver. A receiver swaption gives the holder the option to enter into a swap as the fixed-rate receiver, floating-rate payer. A European-style swaption can only be exercised at expiration. An American-style swaption can be exercised at any time up to and including the expiration. Swaptions can be used in anticipation of future borrowing (i.e. a company anticipates taking out a loan at a future date and purchases a swaption that gives it the flexibility to enter a swap at an attractive rate), to terminate a swap (i.e. a company enters a swap and purchases a swaption that gives it the option to enter into an offsetting swap in the event interest rate movement are not favorable), and to synthetically add (remove) calls in callable (noncallable) debt (i.e. to synthetically remove a call, sell a receiver swaption and to synthetically add a call, purchase a receiver swaption.
+					</aside>
 				</section>
 
 				<section>
