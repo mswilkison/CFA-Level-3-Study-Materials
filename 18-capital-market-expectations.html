@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 6 | Reading 18 | Capital Market Expectations</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 18</h1>
+					<h3>Capital Market Expectations</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">AlchemistsAcademy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Introduction</h2>
+					<ul>
+						<li>Capital market expectations (CME) - investors' expectations concerning the risk and return prospects of asset classes</li>
+						<ul>
+							<li>Macro expectations - expectations about classes of assets</li>
+							<li>Micro expectations - expectations concerning individual assets</li>
+						</ul>
+						<li>Beta research - research related to systematic risk and returns to systematic risk</li>
+						<li>Alpha research - research related to capturing excess risk-adjusted returns by a particular strategy</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>A Framework for Developing CME</h2>
+					<ol>
+						<li>Specify the final set of expectations that are needed, including the time horizon to which they apply</li>
+						<li>Research the historical record</li>
+						<li>Specify the method(s) and/or model(s) that will be used and their information requirements</li>
+						<li>Determine best sources for information needs</li>
+						<li>Interpret current investment environment using selected data and methods, applying experience and judgment</li>
+						<li>Provide the set of expectations that are needed, documenting conclusions</li>
+						<li>Monitor actual outcomes and compare them to expectations, providing feedback to improve the expectations-setting process</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Challenges in Forecasting</h2>
+					<ul>
+						<li>Limitations of economic data</li>
+						<li>Data measurement errors and biases</li>
+						<ul>
+							<li>Transcription errors</li>
+							<li>Survivorship bias</li>
+							<li>Appraisal (smoothed) data</li>
+						</ul>
+						<li>Limitations of historical estimates</li>
+						<li>Ex-post risk can be a biased measure of ex-ante risk</li>
+						<li>Biases in analysts' methods</li>
+						<ul>
+							<li>Data-mining bias</li>
+							<li>Time-period bias</li>
+						</ul>
+						<li>Failure to account for conditioning information</li>
+						<li>Misinterpretation of correlations</li>
+						<li>Psychological traps</li>
+						<li>Model and input uncertainty</li>
+					</ul>
+					<aside class="notes">
+						The limitations of economic data may include time lags, revisions, and changes in definitions overtime. Some of the errors and biases present in data include (1) transcription errors: errors in gathering and recording data; (2) survivorship bias: arises when a data series reflects only entities that have survived to the end of the period; (3) appraisal (smoothed) data: for certain assets without liquid public markets, appraisal data are used in lieu of market price transaction data. The limitations of historical estimates include regime shifts (changing relationships between variables) and nonstationarity (different parts of a data series reflect different underlying statistical properties). Biases in analysts' methods include: (1) data-mining bias: repeatedly searching a dataset until a statistically significant pattern is found and (2) time-period bias: results that are time-period biased. Failure to account for conditioning information occurs when analysts do not take into account relevant new facts that may alter the probability of certain outcomes. Misinterpretation of correlations may include confusing correlation with causation. Psychological traps include the anchoring trap (the tendency of the mind to give disproportionate weight to the first information it receives on a topic), the status quo trap (the tendency for forecasts to perpetuate recent observations), the confirming evidence trap (the bias that leads individuals to give greater weight to information that supports an existing or preferred point of view than to evidence that contradicts it), the overconfidence trap (the tendency of individuals to overestiate the accuracy of their forecasts), the prudence trap (the tendency to temper forecasts so that they do not appear extreme), the recallability trap (the tendency of forecasts to be overly influenced by events that have left a strong impression on a person's memory. Model uncertainty is the uncertainty concerning whether a selected model is correct. Input uncertainty is the uncertainty concerning whether the inputs are correct.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Tools for Formulating CME</h2>
+					<ul>
+						<li>Statistical methods</li>
+						<ul>
+							<li>Descriptive vs. inferential statistics</li>
+							<li>Historical sample approach</li>
+							<li>Shrinkage estimators</li>
+							<li>Time-series estimators</li>
+							<li>Multifactor models</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						Descriptive statistics are used to summarize data to describe important aspects of a dataset. Inferential statistics are methods for making estimates or forecasts about a larger group from an observed smaller group. A historical sample approach may include a mean-variance framework that uses sample mean return as an esimate for expected return, the sample variance as an estimate of variance, and the sample correlations as esimates of correlations. Shrinkage estimation involves taking a weighted average of a historical estimate of a parameter and some other parameter estimate, where the weights reflect the analyst's relative belief in the estimates. Time-series estimators involve forecasting a variable on the basis of lagged values of the variable being forecast and often lagged values of other selected variables. A multifactor model is a model that explains the returns to an asset in terms of the values of a set of return drivers or risk factors.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Tools for Formulating CME (cont'd)</h2>
+					<ul>
+						<li>DCF models: CF<sub>t</sub>/(1+r)<sup>t</sup></li>
+						<ul>
+							<li>Equity markets</li>
+							<ul>
+								<li>Gordon (constant) growth model: E(R<sub>e</sub>)=D<sub>1</sub>/P<sub>0</sub>+g</li>
+								<li>Grinold-Kroner model: E(R<sub>e</sub>)≈D/P-ΔS+i+g+ΔPE</li> 
+							</ul>
+							<li>Fixed-income markets - YTM often used as discount rate</li>
+						</ul>
+						<li>Risk premium (RP) approach: E(R<sub>i</sub>)=R<sub>F</sub>+RP<sub>1</sub>+...+RP<sub>K</sub></li>
+						<ul>
+							<li>Fixed-income RP: E(R<sub>b</sub> = Real risk-free interest rate+Inflation premium+Default RP+Illiquidity premium+Maturity premium+Tax premium</li>
+							<li>Equity RP: E(R<sub>e</sub>)=YTM on LT gov't bond+Equity RP</li>
+						</ul>
+						<li>Financial market equilibrium models</li>
+						<li>Survey and panel methods</li>
+					</ul>
+					<aside class="notes">
+						The Gordon growth model: 'D<sub>1</sub>' = expected annual dividend per share, 'g' = the long-term growth rate in dividends, assumed equal to the long-term earnings growth rate, and 'P<sub>0</sub>' = current share price. Grinold-Kroner model: 'D/P' = expected dividend yield, 'ΔS' = expected % change in number of shares outstanding, 'i' = expected inflation rate, 'g' = expected real total earnings growth rate, 'ΔPE' = per period % change in the P/E multiple. The risk premium approach expresses the expected return on a risk asset as the sum of the risk-free rate of interest and one or more risk premiums that compensate investors for the risk asset's exposure to sources of priced risk. Fixed-income premium: (1) risk-free interest rate = single-period interest rate for a completely risk-free security if no inflation were expected, (2) inflation premium = compensates investor for expected inflation and represents the average inflation rate expected over the maturity of the debt plus a premium(discount) for the probability attached the higher(lower) inflation than expected, (3) default risk premium = compensates investors for probability of default, (4) illiquidity premium = compensates investors for risk of loss relative to fair value in case of quick sale, (5) maturity premium = compensates investors for increased sensitivity of the market value of debt to a change in market interest rates as maturity is extended. Financial market equilibrium models describe relationships between expected return and risk in which supply and demand are in balance. The survey method involves asking a group of experts for their expectations and using the responses in capital market formulation. If the queried group is relatively stable over time, this approach is called the panel method.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Economic Analysis</h2>
+					<ul>
+						<li>Inventory cycle - short-term, typically 2-4 years</li>
+						<li>Business cycle = long-term, typically 9-11 years</li>
+						<li>Primary measures of economic activity:</li>
+						<ul>
+							<li>Gross domestic product (GDP) - the total value of final goods and services produced in the economy during a year</li>
+							<li>Output gap - the difference between the value of GDP estimated as if the economy were operating at its potential output and the actual value of GDP</li>
+							<li>Recession - a broad-based economic downturn</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Business Cycle</h2>
+					<img src="images/18/five-phases-of-the-business-cycle.png" alt="five phases of the business cycle" />
+				</section>
+
+				<section>
+					<h2>Inflation/Deflation Effects on Asset Classes</h2>
+					<img src="images/18/inflation-deflation-effects-on-asset-classes.png" alt="inflation/deflation effects on asset classes" />
+					<aside class="notes">
+						1A: Short-term yields steady or declining | 1B: Yield levels maintained; market in equilibrium | 1C: Bullish while market in equilibrium state | 1D: Cash flow steady or rising slightly. Returns equate to long-term average. Market in general equilibrium | 2A: Bias toward rising rates | 2B: Bias toward higher yields due to a higher inflation premium | 2C: High inflation a negative for financial assets. Less negative for companies/industries able to pass on inflated costs | 2D: Asset values increasing; increased cash flows and higher expected returns | 3A: Bias toward 0% short-term rates | 3B: Purchasing power increasing. Bias toward steady to lower rates (may be offset by increased risk of potential defaults due to falling asset prices) | 3C: Negative wealth effect slows demand. Especially affects asset-intensive, commodity-producing, and highly levered companies | 3D: Cash flows steady to falling. Asset prices face downward pressure
+					</aside>
+				</section>
+
+				<section>
+					<h2>Factors Affecting the Business Cycle</h2>
+					<ul>
+						<li>Consumers</li>
+						<li>Business</li>
+						<li>Foreign trade</li>
+						<li>Gov't activity (monetary and fisal policy)</li>
+					</ul>
+					<aside class="notes">
+						Consumer spending is often measured by retail sales and consumer consumption data. Employment growth and consumer confidence surveys are closesly tracked as well. Business activity is gauged by measuring investment and spending on inventories as well as various sentiment surveys such as the purchasing managers index (PMI). Monetary policy concerns gov't actions such as increasing money supply growth or changing short-term interest rates. Monetary authorities make decisions based on a variety of factors that include the pace of economic growth, the amount of excess capacity, the unemployment rate, and the inflation rate. Fiscal policy refers to gov't spending and/or tax rates that can be used to manipulate the budget deficit and influence the economy.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Policy Mix and the Yield Curve</h2>
+					<img src="images/18/policy-mix-and-the-yield-curve.png" alt="policy mix and the yield curve" />
+					<aside class="notes">
+						The fiscal/monetary mix usually manifests itself in the shape of the yield curve
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h1>Economic Growth Trends</h1>
+					</section>
+
+					<section>
+						<h2>Permanent Income Hypothesis</h2>
+						<p><em>Definition: Consumers' spending behavior is largely determined by their long-run income expectations. Thus, consumer trends are usually stable or even countercyclical over a business cycle</em></p>
+						<aside class="notes">
+							Temporary or unexpected one-time events, such as an inheritance, might temporarily increase an individual's demand for items that might not ordinarily be purchased but overall spending patterns remain largely determined by long-run expectations
+						</aside>
+					</section>
+
+					<section>
+						<h2>Decomposing GDP Growth</h2>
+						<ol>
+							<li>Growth from labor inputs</li>
+							<ul>
+								<li>Growth in potential labor force size</li>
+								<li>Growth in labor force participation rate</li>
+							</ul>
+							<li>Growth from changes in labor productivity</li>
+							<ul>
+								<li>Growth from capital inputs</li>
+								<li>Growth in total factor productivity (TFP)</li>
+							</ul>
+						</ol>
+						<aside class="notes">
+							TFP refers to technical progress resulting from increased efficiency using capital inputs
+						</aside>
+					</section>
+
+					<section>
+						<h2>Government Structural Policies</h2>
+						<p><em>Definition: Government policies that affect the limits of economic growth and incentives within the private sector</em></p>
+						<ul>
+							<li>Elements of a pro-growth government structural policy:</li>
+							<ol>
+								<li>Sound fiscal policy</li>
+								<li>Minimal public sector intrusion into the private sector</li>
+								<li>Encouraging competition within the private sector</li>
+								<li>Support for infrastructure and human capital development</li>
+								<li>Sound tax policies</li>
+							</ol>
+						</ul>
+						<aside class="notes">
+							1) Avoidance of the "twin deficits" problem (i.e. running a gov't budget deficit and current account deficit simultaneously. Avoidance of inflation induced by financing the deficit with printed money. Large budget deficits can "crowd out" private sector investment; 2) Labor market rules (i.e. restrictions on hiring and firing) can raise the structural level of unemployment; 3) Competition drives companies to be more efficient, boosts productivity growth and attracts foreign investment; 4) Often done in partnership with the private sector; 5) Simple, transparent, and rarely altered tax policies; low marginal tax rates; and a very broad tax base
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Exogenous Shocks</h2>
+					<p><em>Definition: Events from outside the economic system that affect its course</em></p>
+					<aside class="notes">
+						Exogenous shocks are, by definition, difficult/impossible to predict and typically not priced into the market and are only partially anticipated. They can affect the entire economy and often involve some degree of contagion. Common exogenous shocks are oil shocks and financial crises.
+					</aside>
+				</section>
+
+				<section>
+					<h2>International Interactions</h2>
+					<ul>
+						<li>Macroeconomic linkages (e.g. foreign demand for exports, cross-border direct investment</li>
+						<li>Interest rate/exchange rate linkages (e.g. "pegged" exchange rates)</li>
+						<li>Emerging markets risk analysis</li>
+						<ol>
+							<li>How sound is fiscal and monetary policy?</li>
+							<li>What are the economic growth prospects for the economy?</li>
+							<li>Is the currency competitive, and are the external accounts under control?</li>
+							<li>Is external debt under control?</li>
+							<li>Is liquidity plentiful?</li>
+							<li>Is the political situation supportive of required policies?</li>
+						</ol>
+					</ul>
+					<aside class="notes">
+						Pegged exchange rates is sometimes used to (1) reassure domestic businesses that exchange rates will not wildly fluctuate and (2) control inflation. However, the efficacy of this strategy is highly dependent on the level of confidence in the peg. Emerging markets require higher rates of investment than developed countries in physical capital, infrastructure and human capital but have inadequate domestic savings so are forced to rely heavily on foreign cpital
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h1>Economic Forecasting</h1>
+					</section>
+
+					<section>
+						<h2>Econometric Modeling</h2>
+						<p><em>Definition: The application of quantitative modeling and analysis grounded in economic theory to the analysis of economic data</em></p>
+						<ul>
+							<li>Steps:</li>
+							<ol>
+								<li>A model of the economy is created based on variables suggested by theory</li>
+								<li>Optimization using historical data is used to estimate the parameters of the equations</li>
+								<li>This estimated system of equations is used to forecast the future values of economic variables</li>
+							</ol>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Economic Indicators</h2>
+						<p><em>Definition: Economic statistics provided by government and established private organizations that contain information on an economy's recent past activity or its current or future position in the business cycle</em></p>
+						<ul>
+							<li>Lagging vs. leading economic indicators</li>
+						</ul>
+						<aside class="notes">
+							Lagging and coincident economic indicators are indicators of recent past and current economic activity. Leading indicators are variables that vary with the business cycle but at a fairly consistent time interval before a turn in the business cycle
+						</aside>
+					</section>
+
+					<section>
+						<h2>Checklist Approach</h2>
+						<img src="images/18/checklist-1.png" alt="checklist for economic growth" />
+					</section>
+
+					<section>
+						<h2>Checklist Approach (cont'd)</h2>
+						<img src="images/18/checklist-2.png" alt="checklist for economic growth" />
+					</section>
+
+					<section>
+						<h2>Checklist Approach (cont'd)</h2>
+						<img src="images/18/checklist-3.png" alt="checklist for economic growth" />
+					</section>
+
+					<section>
+						<h2>Advantages/Disadvantages</h2>
+						<img src="images/18/advantages-disadvantages.png" alt="advantages and disadvantages of three approaches to economic forecasting" />
+					</section>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

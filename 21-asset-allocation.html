@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 8 | Reading 21 | Asset Allocation</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 21</h1>
+					<h3>Asset Allocation</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">AlchemistsAcademy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Asset Allocation</h2>
+					<ul>
+						<li>Strategic asset allocation (SAA) - Establishing exposures to IPS-permissible asset classes by considering both long-run capital market expectations and an investor's return objectives, risk tolerance, and investment contraints</li>
+						<ul>
+							<li>Specifies the investor's desired exposures to systematic risk under normal conditions</li>
+						</ul>
+						<li>Tactical asset allocation (TAA) - Involves making short-term adjustments to asset-class weights based on short-term expected relative performance among asset classes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Asset-Only and Asset/Liability Management Approaches to SAA</h2>
+					<ul>
+						<li>Asset/liability management (ALM)</li>
+						<li>Asset-only (AO)</li>
+						<li>Cash flow matching</li>
+						<li>Immunization</li>
+						<li>Dynamic vs. static</li>
+					</ul>
+					<aside class="notes">
+						An ALM approach involves explicitly modeling liabilities and adoptin the optimal asset allocation in relationship to funding liabilities. An AO approach does not explicitly model liabilities and any impact of the investor's liabilities on policy portfolio selection is indirect. A cash flow matching approach structures investments in bonds to offset future liabilities or quasi-liabilities. An immunization approach structures investments in bond to offfset the weighted-average duration of liabilities. A dynamic approach recognizes that an investor's asset allocation and actual asset returns and liabilities in a given period affect the optimal decision that will be available next period. A static approach does not consider links between optimal decisions at different time periods
+					</aside>
+				</section>
+
+				<section>
+					<h2>Liability Concerns of Various Investors</h2>
+					<img src="images/21/characteristic-liability-concerns-of-various-investors.png" alt="characteristic liability concerns of various investors" />
+				</section>
+
+				<section>
+					<h2>SAA Risk and Return Objectives</h2>
+					<ul>
+						<li>Return objectives should include both qualitative and quantitative objectives</li>
+						<li>Risk objectives should include a qualitative assessment (e.g. low, average, high), based on the investor's willingness and ability to take risk, as well as a quantitative component</li>
+						<ul>
+							<li>U<sub>m</sub>=E(R<sub>m</sub>)-0.005R<sub>A</sub>σ<sup>2</sup><sub>m</sub></li>
+							<li>Shortfall risk</li>
+							<li>Roy's safety-first criterion: SFRatio = [E(R<sub>P</sub>)-R<sub>L</sub>]/σ<sub>P</sub></li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						U<sub>m</sub> = investor's expected utility for asset mix m; E(R<sub>m</sub>) = expected return for mix m; R<sub>A</sub> = investor's risk aversion; σ<sup>2</sup><sub>m</sub> = variance of return for mix m. Shortfall risk is the risk that a portfolio's value will fall below some minimum acceptable level during a stated time horizon. When selecting among risk portfolios using Roy's safety first criterion, choose the portfolio that maximizes the safety-first ratio
+					</aside>
+				</section>
+
+				<section>
+					<h2>Criteria for Specifying Asset Classes</h2>
+					<ul>
+						<li>Assets within an asset class should be relatively homogeneous</li>
+						<li>Asset classes should be mutually exclusive</li>
+						<li>Asset classes should be diversifying</li>
+						<li>As a group, the asset classes should make up a preponderance of the world's investable wealth</li>
+						<li>The asset class should have the capacity to absorb a significant fraction of the investor's portfolio without serious affecting the portfolio's liquidity</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Including International Assets</h2>
+					<ul>
+						<li>To determine whether to include another asset class in a portfolio using a mean-variance framework:</li>
+						<ol>
+							<li>Calculate Sharpe ratio of new asset class</li>
+							<li>Calculate Sharpe ratio of existing portfolio</li>
+							<li>Calculate correlation between return of new asset class and return of portfolio</li>
+							<li>Add the new asset class if:</li>
+							<ul>
+								<li>[E(R<sub>new</sub>)-R<sub>F</sub>]/σ<sub>new</sub> > [[E(R<sub>p</sub>-R<sub>F</sub>]/σ<sub>p</sub>]×Corr(R<sub>new</sub>,R<sub>p</sub>)</li>
+							</ul>
+						</ol>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Asset Allocation Steps</h2>
+					<img src="images/21/major-steps-in-asset-allocation.png" alt="major steps in asset allocation" />
+					<aside class="notes">
+						The asset allocation process starts at the top of the diagram and proceeds downward.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Optimization</h2>
+					<ul>
+						<li>The mean-variance approach</li>
+						<ul>
+							<li>Efficient frontier</li>
+							<li>Global minimum-variance portfolio</li>
+							<li>Unconstrained vs. sign-constrained MVF</li>
+							<li>Corner portfolios</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						Under a mean-variance approach, investor's will choose portfolios from the efficient frontier, which is the upper half of the minimum-variance frontier (the set of portfolios with the smellest variance of return for its level of expected return). The global minimum-variance portfolio has the smallest variance of all minimum-variance portfolios. Corner portfolios define a segment of the MVF within which (1) portfolios hold identical assets and (2) the rate of change of asset weights in moving from one portfolio to another is constant. Knowing the composition of the corner portfolios allows us to compute the weights of any portfolio on the MVF. In an unconstrained MVF optimization, there are no constraints on asset class weights except that the weight sum to 1. In a sign-constrained optimization, negative weights (short sales) are disallowed.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Black-Litterman Approach</h2>
+					<img src="images/21/steps-in-the-bl-model.png" alt="steps in the BL model" />
+				</section>
+
+				<section>
+					<h2>Monte Carlo Simulation and SAA</h2>
+					<p><em>Definition: Involves the calculation and statistical description of the outcomes resulting in a particular SAA under random scenarios</em></p>
+				</section>
+
+				<section>
+					<h2>ALM, SAA, and Monte Carlo Simulation</h2>
+					
+<ol>
+						<li>Determine the surplus efficient frontier and select a limited set of efficient portfolios, ranging from the MSV portfolio to higher-surplus-risk portfolio, to examine further</li>
+						<li>Conduct a Monte Carlo simulation for each proposed asset allocation and evaluate which allocations, if any, satisfy the investor's return and risk objectives</li>
+						<li>Choose the most appropriate allocation that satisfies those objectives</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h1>Implementing the SAA</h1>
+					</section>
+
+					<section>
+						<h2>Implementation Choices</h2>
+						<ul>
+							<li>Passive investing</li>
+							<li>Active investing</li>
+							<li>Semi-active investing or enhanced indexing</li>
+							<li>Some combination of the above</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Passive Investing Alternatives</h2>
+						<ul>
+							<li>A tracking portfolio of cash market securities designed to replicate the returns to a broad investable index representing that asset class</li>
+							<li>A derivatives-based portfolio consisting of a cash position plus a long position in a swap in which the retruns to an index representing that asset class is received</li>
+							<li>A derivatives-based portfolio consisting of a cash position plus a long position in index futures for the asset class</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Active Investing Alternatives</h2>
+						<ul>
+							<li>A portfolio of cash market securities that reflects the investor's perceived special insights and skill and that also makes no attempt to track any asset-class index's performance</li>
+							<li>A derivatives-based position to provide commodity-like exposure to the asset class plus a market-neutral long-short position to reflect active investment ideas</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Semi-Active Investing Alternatives</h2>
+						<ul>
+							<li>A tracking portfolio of cash market securities that permits some under- or overweighting of securities relative to the asset-class index but with controlled tracking risk</li>
+							<li>A derivatives-based position in the asset-class plus controlled active risk in the cash position</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>SAA for Individual Investors</h1>
+					</section>
+
+					<section>
+						<h2>Introduction</h2>
+						<ul>
+							<li>Asset allocation must account for:</li>
+							<ul>
+								<li>Portion of wealth flowing from current and future labor income, and the changing mix of financial and labor-income-related wealth as a person moves through life</li>
+								<li>Any correlation of current and future labor income with financial asset returns</li>
+								<li>The possibility of outliving one's resources</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Human Capital</h2>
+						<p><em>Definition: The PV of expected future labor income</em></p>
+						<ul>
+							<li>One's ability and willingness to take risk depends on:</li>
+							<ul>
+								<li>Personality makeup</li>
+								<li>Current and future needs</li>
+								<li>Current and anticipated future financial situation</li>
+							</ul>
+							<li>Mortality risk - the risk of loss of human capital if an investor dies prematurely</li>
+							<li>Longevity risk - the risk that an investor will outlive her assets in retirement</li>
+						</ul>
+						<aside class="notes">
+							Investors with safe labor income will invest more of their financial portfolio into equities. Investors with labor income that is highly positively correlated with stock markets should tend to choose an asset allocation with less exposure to stocks. The ability to adjust labor supply tends to increase an investor's optimal allocation to equities. Investors should invest financial capital assets in such a way as to diversify and balance out their human capital
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Tactical Asset Allocation (TAA)</h2>
+					<p><em>Definition: Involves deliberately under- or overweighting asset classes relative to their target weights in the policy portfolio in an attempt to add value</em></p>
+					<ul>
+						<li>Based on three principles:</li>
+						<ol>
+							<li>Market prices tell explicity what returns are available</li>
+							<li>Relative expected returns reflect relative risk perceptions</li>
+							<li>Markets are rational and mean reverting</li>
+						</ol>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

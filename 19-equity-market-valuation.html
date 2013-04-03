@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 7 | Reading 19 | Equity Market Valuation</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 19</h1>
+					<h3>Equity Market Valuation</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">AlchemistsAcademy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Estimating a Justified P/E Ratio</h2>
+					<ul>
+						<li>Cobb-Douglas production function: Y=AK<sup>α</sup>L<sup>β</sup></li>
+						<li>H-model: V<sub>0</sub>=D<sub>0</sub>/(r-g<sub>L</sub>)[(1+g<sub>L</sub>)+N/2(g<sub>S</sub>-g<sub>L</sub>)]</li>
+						<li>Justified P/E - the estimated intrinsic value (determined using the H-model or another model) divided by the expected earnings over the next year</li>
+					</ul>
+					<aside class="notes">	
+						The Cobb-Douglas model is used to obtain growth rates for an economy and, thus, the dividend growth rate trajectory for a corresponding equity market. 'Y' represents total real economic output, 'A' is total factor productivity, 'K' is capital stock, 'α' is output elasticity of 'K', 'L' is labor input, and 'β' is the output elasticity. TFP accounts for that amount of real economic output that is not directly accounted for by the levels of production factors ('K' and 'L'). The H-model assumes dividend growth rates will decline in a linear fashion towards a sustainable rate in perpetuity. 'g<sub>S</sub>' is the initial high-growth rate, 'N' is the high-growth period, 'g<sub>L</sub>' is the expected long-term growth rate
+					</aside>
+				</section>
+
+				<section>
+					<h2>Top-Down Forecasting</h2>
+					<img src="images/19/top-down-analysis.png" alt="top-down analysis" />
+				</section>
+
+				<section>
+					<h2>Bottom-Up Forecasting</h2>
+					<img src="images/19/bottom-up-analysis.png" alt="bottom-up analysis" />
+				</section>
+
+				<section>
+					<section>
+						<h1>Relative Value Models</h1>
+					</section>
+
+					<section>
+						<h2>Fed Model</h2>
+						<p><em>Prediction: The equity market is undervalued if its earnings yield exceeds the yield on government securities</em></p>
+						<ul>
+							<li>Strengths:</li>
+							<ul>
+								<li>Easy to understand and apply</li>
+								<li>Consistent with discounted cash flows models that show an inverse relationship between value adn the discount rate</li>
+							</ul>
+							<li>Limitations:</li>
+							<ul>
+								<li>Ignores the equity risk premium</li>
+								<li>Compares a real variable to a nominal variable</li>
+								<li>Ignores earnings growth</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Yardeni Model</h2>
+						<p><em>Prediction: Equities are overvalued if the fair value estimate of the earnings yield provided by the model exceeds the actual earnings yield for the market index</em></p>
+						<ul>
+							<li>Strengths:</li>
+							<ul>
+								<li>Improves on the Fed model by including the yield on risky debt and a measure of expected earnings growth as determinants of value</li>
+							</ul>
+							<li>Limitations:</li>
+							<ul>
+								<li>Risk premium captured by model is largely a default risk premium that does not accurately measure equity risk</li>
+								<li>Earnings growth forecast not accurate/sustainable</li>
+								<li>The estimate of fair value assumes the discount factor investors apply to the earnings forecast remains constant over time</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							Formula: E<sub>1</sub>/P<sub>0</sub>=y<sub>B</sub>-d×LTEG, where 'y<sub>B</sub> is the Moody's A-rated corporate bond yield, 'LTEG' is the consensus five-year earning growth forecast for the S&P 500, and 'd' is a coefficient representing a weighting factor that measures the importance the market assigns to the earnings projections
+						</aside>
+					</section>
+
+					<section>
+						<h2>P/10-year MA(E)</h2>
+						<p><em>Prediction: Future equity returns will be higher when ratio is low</em></p>
+						<ul>
+							<li>Strengths:</li>
+							<ul>
+								<li>Controls for inflation and business cycle effects by using a 10-year moving average of real earnings</li>
+								<li>Historical data supports an inverse relationship between the ratio and future equity returns</li>
+							</ul>
+							<li>Limitations:</li>
+							<ul>
+								<li>Changes in accounting methods used to determine reported earnings may lead to comparison problems</li>
+								<li>Current period or other measures of earnings may provide a better estimate for equity prices</li>
+								<li>Empirically, both high and low levels of the ratio can be persistent</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Tobin's q and equity q</h2>
+						<p><em>Prediction: Future equity returns will be higher when Tobin's q and equity q are low</em></p>
+						<ul>
+							<li>Strengths:</li>
+							<ul>
+								<li>Both measures relay on a comparison of security values to asset replacement costs; economic theory suggests this relationship is mean-reverting</li>
+								<li>Historical data supports an inverse relationship between both measures and future equity returns</li>
+							</ul>
+							<li>Limitations:</li>
+							<ul>
+								<li>Difficult to obtain accurate measures of replacement cost for many assets because they lack liquid markets and intangible assets can be difficult to value</li>
+								<li>Empirically, both high and low levels of Tobin's and equity q can be persistent</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							Tobin's <em>q</em> is calculated at the individual company level as the market value of a company divided by the replacement cost of its assets. Equity <em>q</em> is the ratio of a company's marketcapitalization divided by net worth measured at replacement cost
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

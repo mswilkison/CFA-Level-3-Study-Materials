@@ -72,14 +72,19 @@
 							<li>Market order</li>
 							<li>Limit order</li>
 							<li>Market-not-held order, participate order, best efforts order, undiscolsed limit order, market on open/close order</li>
-							<li>[Principal trade, portfolio trade]</li>
+							<li>Principal trade vs. portfolio trade</li>
 						</ul>
 						<aside class="notes">
-							A market order is an instruction to execute an order promptly in the public markets at the best available price. It places a premium on the immediacy of execution at the cost of price uncertainty. A limit order is an instruction to trade at the best price available but only if the price is at least as good as the limit price specified in the order. It places an emphasis on price while risking execution uncertainty.
+							A market order is an instruction to execute an order promptly in the public markets at the best available price. It places a premium on the immediacy of execution at the cost of price uncertainty. A limit order is an instruction to trade at the best price available but only if the price is at least as good as the limit price specified in the order. It places an emphasis on price while risking execution uncertainty. A principal trade is a trade with a broker in which the broker commits capital to facilitate the prompt execution of the trader's order. Portfolio trades involve orders that require the purchase/sale of a specified basket of securities at as close to the same time as possible.
 					</section>
 
 					<section>
-						<h2>[Types of Markets]</h2>
+						<h2>Types of Markets</h2>
+						<ul>
+							<li>Quote-driven markets - traders trade with dealers</li>
+							<li>Order-driven markets - traders trade directly with one another</li>
+							<li>Brokered markets - traders rely on a broker to find the other side of a trade</li>
+						</ul>
 						<aside class="notes">
 							Markets are organized to provide liquidity, transparency, and assurity of completion.
 						</aside>
@@ -90,13 +95,7 @@
 						<ul>
 							<li>Rely on dealers to esablish firm prices at which securities can be bought and sold</li>
 							<li>Bid-ask spread and size indicate liquidity</li>
-							<ul>
-								<li>[table to explain inside spreads]</li>
-							</ul>
 							<li>Effective spread</li>
-							<ul>
-								<li>[example]</li>
-							</ul>
 						</ul>
 						<aside class="notes">
 							The effective spread is two times the deviation of the actual execution price from the midpoint of the market quote at the time an order is entered. It captures price improvement and market impact.
@@ -122,7 +121,7 @@
 						<h2>Brokered Markets</h2>
 						<p><em>Definition: A market in which transactions are largely effected through a search-brokerage mechanism away from public markets</em></p>
 						<ul>
-							<li>Bock order</li>
+							<li>Block order</li>
 							<ul>
 								<li>Position a trade</li>
 								<li>Front-run</li>
@@ -181,7 +180,7 @@
 							<li>Delay costs</li>
 						</ul>
 						<li>Volume-weighted average price (VWAP)</li>
-						<li>Implementation shortfall [example]</li>
+						<li>Implementation shortfall</li>
 						<li>Econometric cost models (pretrade analysis)</li>
 					</ul>
 					<aside class="notes">
@@ -191,18 +190,12 @@
 
 				<section>
 					<h2>VWAP vs. Implementation Shortfall</h2>
-					<p>[comparison table]</p>
+					<img src="images/39/comparison-of-vwap-and-implementation-shortfall.png" alt="comparison of VWAP and Implementation Shortfall" />
 				</section>
 
 				<section>
 					<h2>Types of Traders</h2>
-					<ul>
-						<li>Information-motivated tarders</li>
-						<li>Value-motivated traders</li>
-						<li>Liquidity-motivated traders</li>
-						<li>Passive traders</li>
-						<li>[replace above with a table]</li>
-					</ul>
+					<img src="images/39/summary-of-trader-types.png" alt="summary of trading motivations, time horizons, and time vs. price preferences" />
 					<aside class="notes">
 						There is a trade-off between the urgency of a trade and its certainty of execution.
 					</aside>
@@ -210,12 +203,15 @@
 
 				<section>
 					<h2>Trading Objectives</h2>
-					<p>[table]</p>
+					<img src="images/39/objectives-in-trading.png" alt="objectives in trading" />
 				</section>
 
 				<section>
 					<h2>Algorithmic Trading</h2>
-					<p>[breakdown table]</p>
+					<img src="images/39/algorithmic-trading-classification.png" alt="algorithmic trading classification" />
+					<aside class="notes">
+						Simple logical participation strategies allow institutional investors to participate in overall market volumes without being overly visible. Implementation shortfall strategies solve for the optimal trading strategy that minimizes trading costs as measured by the implementation shortfall method. Opportunistic strategies involve passive trading combined with the opportunistic seizing of liquidity.
+					</aside>
 				</section>
 
 				<section>
