@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 10 | Reading 26 | Hedging Mortgage Securities to Capture Relative Value</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 26</h1>
+					<h3>Hedging Mortgage Securities to Capture Relative Value</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">AlchemistsAcademy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Mortgage Securities and Negative Convexity</h2>
+					<ul>
+						<li>For a security that exhibits positive convexity, the price increase when interest rates decline is greater than the price decrease when interest rates rise</li>
+						<li>For a security that exhibits negative convexity, the price increase when interest rates decline is less than the price decrease when interest rates rise</li>
+						<li>Value of agency mortgage security = Value of a Treasury security - Value of prepayment option</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Mortgage Securities and Negative Convexity (cont'd)</h2>
+					<img src="images/26/duration-changes.png" alt="positive and negative convexity and duration changes" />
+				</section>
+
+				<section>
+					<h2>Mortgage Security Risks</h2>
+					<ul>
+						<li>Spread risk</li>
+						<li>Interest rate risk</li>
+						<ul>
+							<li>Yield curve risk</li>
+						</ul>
+						<li>Prepayment risk</li>
+						<li>Volatility risk</li>
+						<li>Model risk</li>
+					</ul>
+					<aside class="notes">
+						Spread risk is the risk that the OAS may change. It is not hedged, rather, it is managed by investing heavily in securities only when the initial OAS is large. The interest rate risk of a mortgage security corresponds to that of a comparable Treasury security and can be hedged by selling a package of T-notes or T-note futures. Yield curve risk is the exposure of a portfolio or security to a nonparallel change in the slope of the yield curve. Prepayment risk is the risk that duration will rise as rates rise and shorten as rates fall. It can be hedged dynamically by buying futures when rates decline and selling futures when rates rise. Volatility risk is the risk that expected volatility will rise, thus increasing the value of the prepayment option. It can be hedged by either buying options or hedging dynamically. Model risk is the risk that a model is miscalibrated or incorrecly applied.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Hedging Methodology</h2>
+					<ul>
+						<li>To properly hedge mortgage security interest rate risk, managers must consider:</li>
+						<ol>
+							<li>How the yield curve changes over time</li>
+							<li>The effect of changes in the yield curve on the homeowner's prepayment option</li>
+						</ol>
+						<li>Two hedging instruments can be used in concert to hedge both changes in the "level" and "twists" in the yield curve (two-bond hedge)</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h1>Computing the Two-Bond Hedge</h1>
+					</section>
+
+					<section>
+						<h2>Underlying Assumptions</h2>
+						<ul>
+							<li>The yield curve shifts used in constructing the two-bond hedge are reasonable</li>
+							<li>The prepayment model used creates a reasonable estimate of how cash flows will change when the yield curve changes</li>
+							<li>Assumptions underlying the Monte Carlo simulation model are realized</li>
+							<li>The average price change in a good approximation of how the mortgage security's price will change for small movements in interest rates</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 1</h2>
+						<p>For an assumed shift in the level of the yield curve, compute the:</p>
+						<ul>
+							<li>Price of the mortgage security for an assumed increase and decrease in the level of interest rates</li>
+							<li>Price of the 2-year Treasury note (or futures) for an assumed increase and decrease in the level of interest rates</li>
+							<li>Price of the 10-year Treasury note (or futures) for an assumed increase and decrease in the level of interest rates</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 2</h2>
+						<p>Using the calculations from Step 1, calculate the price change for the mortgage security, 2-year Treasury, and 10-year Treasury for the assumed shift in the level of interest rates (6 total, 2 for each security)</p>
+					</section>
+
+					<section>
+						<h2>Step 3</h2>
+						<p>Calculate the average price change for the mortgage security and the two hedging instruments for the assumed shift in the level of interest rates assuming the two scenarios are equally likely</p>
+						<ul>
+							<li>MBS price<sub>L</sub> = Average price change for the mortgage security for a level shift</li>
+							<li>2-H price<sub>L</sub> = Average price change for the 2-year Treasury hedging instrument for a level shift</li>
+							<li>10-H price<sub>L</sub> = Average price change for the 10-year Treasury hedging instrument for a level shift</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 4</h2>
+						<p>For an assumed twist (flattening and steepening) of the yield curve compute the:</p>
+						<ul>
+							<li>Price of the mortgage security for an assumed flattening and steepening of the yield curve</li>
+							<li>Price of the 2-year Treasury note (or futures) for an assumed flattening and steepening of the yield curve</li>
+							<li>Price of the 10-year Treasury note (or futures) for an assumed flattening and steepening of the yield curve</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 5</h2>
+						<p>From the prices calculated in Step 4, calculate the price change for the mortgage security, 2-year Treasury, and 10-year Treasury for the assumed twist in the yield curve (6 total, 2 for each security)</p>
+					</section>
+
+					<section>
+						<h2>Step 6</h2>
+						<p>Calculate the average price change for the mortgage security and the two hedging instruments for an assumed twist in the yield curve assuming that both scenarios are equally likely</p>
+						<ul>
+							<li>MBS price<sub>T</sub> = Average price change for the mortgage security for a twist in the yield curve</li>
+							<li>2-H price<sub>T</sub> = Average price change for the 2-year Treasury hedging instrument for an assumed twist in the yield curve</li>
+							<li>10-H price<sub>T</sub> = Average price change for the 10-year Treasury hedging instrument for an assumed twist in the yield curve</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 7</h2>
+						<p>Compute the change in value of the two-bond hedge portfolio for a change in the level of the yield curve</p>
+						<ul>
+							<li>H<sub>2</sub>×(2-H price<sub>L</sub>)+H<sub>10</sub>×(10-H price<sub>L</sub>)</li>
+							<ul>
+								<li>H<sub>2</sub> = Amount of the 2-year hedging instrument per $1 of market value of the mortgage security</li>
+								<li>H<sub>10</sub> = Amount of the 10-year hedging instrument per $1 of market value of the mortgage security</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 8</h2>
+						<p>Determine the change in value of the two-bond portfolio for a twist in the yield curve</p>
+						<ul>
+							<li>H<sub>2</sub>×(2-H price<sub>T</sub>)+H<sub>10</sub>×(10-H price<sub>T</sub>)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 9</h2>
+						<p>Determine the set of equations that equates the change in value of the two-bond hedge to the change in price of the mortgage security</p>
+						<ul>
+							<li>Level: H<sub>2</sub>×(2-H price<sub>L</sub>)+H<sub>10</sub>×(10-H price<sub>L</sub>) = -MBS price<sub>L</sub></li>
+							<li>Twist: H<sub>2</sub>×(2-H price<sub>T</sub>)+H<sub>10</sub>×(10-H price<sub>T</sub>) = -MBS price<sub>T</sub></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Step 10</h2>
+						<p>Solve the simultaneous equations in Step 9 for the values of H<sub>2</sub> and H<sub>10</sub></p>
+					</section>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

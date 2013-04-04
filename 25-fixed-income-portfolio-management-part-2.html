@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Study Session 10 | Reading 25 | Fixed-Income Portfolio Management, Par 2</title>
+
+		<meta name="description" content="Chartered Financial Analyst Level 3 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Reading 25</h1>
+					<h3>Fixed-Income Portfolio Management, Part 2</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">AlchemistsAcademy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Other Fixed-Income Strategies</h2>
+					<ul>
+						<li>Combination strategies</li>
+						<ul>
+							<li>Active/passive combination</li>
+							<li>Active/immunization combination</li>
+						</ul>
+						<li>Leverage - magnifies gains and losses</li>
+						<ul>
+							<li>Repurchase agreements</li>
+						</ul>
+						<li>Derivatives-enabled strategies</li>
+					</ul>
+					<aside class="notes">
+						An active/passive combination allocates a core component of the portfolio to a passive strategy and the balance to an active component. An active/immunization combination consists of an immunized portfolio providing an assured return over the planning horizon and a second portfolio using an active high-risk/return strategy.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Repurchase Agreements</h2>
+					<p><em>Definition: A contract involving the sale of securities coupled with an agreement to repurchase the same securities on a later date</em></p>
+					<ul>
+						<li>Factors affecting the repo rate:</li>
+						<ol>
+							<li>Quality of the collateral</li>
+							<li>Term of the repo</li>
+							<li>Delivery requirement</li>
+							<li>Availability of collateral</li>
+							<li>Prevailing interest rates in the economy</li>
+							<li>Seasonal factors</li>
+						</ol>
+					</ul>
+					<aside class="notes">
+						1) The higher the quality, the lower the repo rate; 2) The longer the maturity, the higher the rate; 3) If physical delivery is required, the rate will be lower due to lower default risk; 4) Securities in short supply or that are difficult to obtain, may demand a lower rate; 5) The higher the federal funds rate, the higher the repo rate
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h1>Derivatives-Enabled Strategies</h1>
+					</section>
+
+					<section>
+						<h2>Interest Rate Risk</h2>
+						<ul>
+							<li>Portfolio duration - the weighted-average of the durations of the individual securities composing a portfolio</li>
+							<li>Dollar duration - the duration impact of a one dollar investment in a security</li>
+							<ul>
+								<li>(D<sub>i</sub>×V<sub>i</sub>)/V<sub>p</sub></li>
+							</ul>
+							<li>To maintain portfolio duration when exchanging one security for another, the dollar durations of the exchanged securities must match</li>
+							<ul>
+								<li>New bond market value = DD<sub>0</sub>/D<sub>N</sub>×100</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							'DD<sub>0</sub>' = dollar duration of old bond; 'D<sub>N</sub>' = duration of new bond; 
+						</aside>
+					</section>
+
+					<section>
+						<h2>Other Risk Measures</h2>
+						<ul>
+							<li>Semivariance - measures dispersion of return outcomes below the target return</li>
+							<ul>
+								<li>Computationally challenging</li>
+								<li>To the extent returns are symmetric, it containts no additional information as compared to variance</li>
+							</ul>
+							<li>Shortfall risk - probability of not achieving some specified target return</li>
+							<ul>
+								<li>Does not account for magnitude of losses in dollar terms</li>
+							</ul>
+							<li>Value at risk (VaR) - estimate of the loss (in dollar terms) that is expected to be exceeded with a given level of probability over a specified time horizon</li>
+							<ul>
+								<li>Does not indicate the magnitude of losses beyond exceedance point</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Problems with Using Variance to Measure Bond Portfolio Risk</h2>
+						<ol>
+							<li>Number of estimated parameters increases dramatically as number of bonds under consideration increases</li>
+							<ul>
+								<li># of parameters = # of bonds × (× of bonds + 1)/2</li>
+							</ul>
+							<li>Difficult to estimate variances and covariances based on historical data</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Products Used in Derivatives-Enabled Strategies</h2>
+						<img src="images/25/derivatives-enabled-strategies.png" alt="derivatives-enabled strategies" />
+					</section>
+
+					<section>
+						<h2>Interest Rate Futures</h2>
+						<p><em>Definition: A contract between a buyer and seller agreeing to the future delivery of an interest-bearing asset</em></p>
+						<ul>
+							<li>Conversion factors</li>
+							<li>Cheapest-to-deliver (CTD)</li>
+							<li>Common strategies:</li>
+							<ul>
+								<li>Duration management</li>
+								<li>Duration hedging</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							Conversion factors are used to determine the invoice price of each acceptable deliverable Treasury issue against the Treasury bond futures contract. When selecting a bond for delivery, the short will deliver the one that is least expensive (CTD). This optionality in choosing which issue to deliver is referred to as the quality option. Additionally, shorts have a timing option (flexbility in the day of actual delivery within the delivery month) and a wildcard option (the right of the short to give notice of intent to deliver up to 8pm Central time on the date the futures settlement price has been fixed.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Duration Management</h2>
+						<p><em>Definition: The process of maintaining a portfolio's duration at its target value</em></p>
+						<ul>
+							<li>Portfolio target dollar duration (DD) = Current portfolio DD w/o futures + DD of futures contracts</li>
+							<ul>
+								<li>DD of futures = DD per futures contract × # of contracts</li>
+							</ul>
+							<li>Number of contracts needed to achieve portfolio target DD:</li>
+							<ul>
+								<li>(D<sub>T</sub>-D<sub>I</sub>)P<sub>I</sub>/DD per futures contract, OR</li>
+								<li>[(D<sub>T</sub>-D<sub>I</sub>)P<sub>I</sub>/(D<sub>CTD</sub>P<sub>CTD</sub>)]×(D<sub>CTD</sub>P<sub>CTD</sub>)/DD per futures contract, OR</li>
+								<li>[(D<sub>T</sub>-D<sub>I</sub>)P<sub>I</sub>/(D<sub>CTD</sub>P<sub>CTD</sub>)]×Conversion factor for CTD bond</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							'D<sub>T</sub>' = target duration of portfolio; 'D<sub>I</sub>' = initial duration of portfolio; 'P<sub>I</sub>' = initial market value of portfolio; 'D<sub>CTD</sub>' = duration of cheapest-to-deliver bond; 'P<sub>CTD</sub>' = price of cheapest-to-deliver bond
+						</aside>
+					</section>
+
+					<section>
+						<h2>Duration Hedging</h2>
+						<p><em>Definition: The process of using futures contracts to offset existing interest rate exposure</em></p>
+						<ul>
+							<li>Basis and basis risk</li>
+							<li>Cross hedging</li>
+							<ul>
+								<li>Hedge ratio = Factor exposure of bond/portfolio to be hedged/Factor exposure of hedging instrument</li>
+								<li>Hedge ratio = (D<sub>H</sub>P<sub>H</sub>)/(D<sub>CTD</sub>P<sub>CTD</sub>)×Conversion factor for CTD bond×Yield beta</li>
+							</ul>
+							<li>Sources of hedging error:</li>
+							<ul>
+								<li>Incorrect duration calculations</li>
+								<li>Inaccurate projected basis values</li>
+								<li>Inaccurate yield beta estimates</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							Duration hedging is complicated by the fact that the cash and futures price don't always track each other perfectly. Basis is the difference between the cash price and futures price. Basis risk is the risk that basis will change in an unpredictable way. Cross hedging is the practice of using a similar, but not identical, asset to hedge an underlying asset. To minimize risk in a cross hedge, an investor must calculate the appropriate hedge ratio. Hedge ratio: 'D<sub>H</sub>' = duration of bond to be hedged; 'P<sub>H</sub>' = price of bond to be hedged; 'Yield beta' = the expected relative change in the two bonds
+						</aside>
+					</section>
+
+					<section>
+						<h2>Interest Rate Swaps</h2>
+						<p><em>Definition: A contract between counterparties to exchange periodic interest pyaments based on a specified notional principal amount</em></p>
+						<ul>
+							<li>Fixed-rate payer vs. floating-rate payer</li>
+							<li>Dollar duration (DD) of a swap = DD of fixed rate bond - DD of floating rate bond</li>
+						</ul>
+						<aside class="notes">
+							The fixed-rate payer is obligated to make periodic interest payments at a fixed rate. The floating-rate payer is obligated to make periodic interest payments based on a benchmark floating rate.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Bond and Interest Rate Options</h2>
+						<ul>
+							<li>Option duration = Option delta × Underlying instrument duration × Price of underlying/Price of option instrument</li>
+							<li>Protective puts and covered calls</li>
+							<li>Caps and floors</li>
+						</ul>
+						<aside class="notes">
+							An option's delta is the price responsiveness of the option to a change in the underlying instrument. Buying a protective put establishes a minimum value for a portfolio but allows the holder to benefit from declining rates. Selling a covered call is a strategy that exchanges potential upside for current income via premiums. An interest rate cap are created by purchasing call options on an interest rate to establish a ceiling on funding costs. Interest rate floors are created by writing put options on an interest rate to establish a minimum earning rate on lended funds. The combination of a cap and a floor is referred to as a collar.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Credit Risk Instruments</h2>
+						<ul>
+							<li>Credit options</li>
+							<ul>
+								<li>Binary credit option - provides payoffs contingent on the occurence of a specified negative credit event</li>
+								<li>Credit spread option: Payoff = Max[(Spread at maturity - Strike spread)×Notional amount×Risk factor, 0]</li>
+							</ul>
+							<li>Credit forwards</li>
+							<ul>
+								<li>Payoff = (Credit spread at forward contract maturity-Contracted credit spread)×Notional amount×Risk factor</li>
+							</ul>
+							<li>Credit swaps</li>
+							<ul>
+								<li>Credit default swap - contract that shifts credit exposure of an asset issued by a specified reference entity from one investor to another investor</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>International Bond Investing</h1>
+					</section>
+
+					<section>
+						<h2>Active Management</h2>
+						<ul>
+							<li>Attempts to add value via:</li>
+							<ul>
+								<li>Bond market selection</li>
+								<li>Currency selection</li>
+								<li>Duration and yield curve management</li>
+								<li>Sector selection</li>
+								<li>Credit analysis of issuers</li>
+								<li>Investing in markets outside the benchmark</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Currency Risk</h2>
+						<ul>
+							<li>Interest rate parity (IRP) - states the forward foreign exchange rate discount/premium over a fixed period should equal the risk-free interest rate differential between the two countries over that period</li>
+							<ul>
+								<li>f = (F-S<sub>0</sub>)/S<sub>0</sub></li>
+								<li>f ≈ i<sub>d</sub> - i<sub>f</sub></li>
+							</ul>
+							<li>Hedging currency risk</li>
+							<ul>
+								<li>Forward hedging</li>
+								<li>Proxy hedging</li>
+								<li>Cross hedging</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							IRP: 'f' = forward discount/premium; 'F' = forward exchange rate (domestic currency/foreign currency); 'S<sub>0</sub>' = spot exchange rate (domestic currency/foreign currency); 'i<sub>d</sub>' = domestic risk-free rate; 'i<sub>f</sub>' = foreign risk-free rate. Forward hedging involves the use of a forward contract between the bond's currency and the home currency. Proxy hedging involves using a forward contract between the home currency and a currency that is highly correlated with the bond's currency. Cross hedging refers to hedging using two currencies other that the home currency
+						</aside>
+					</section>
+
+					<section>
+						<h2>Breakeven Spread Analysis</h2>
+						<p><em>Definition: An analysis that quanitifies the amount of spread widening required to diminish a foreign yield advantage</em></p>
+					</section>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
